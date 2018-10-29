@@ -1,0 +1,49 @@
+.cke_editable_themed span.pullquote {
+  background: yellow;
+
+  &::selection { // so you can tell when highlighted
+    background: pink;
+  }
+}
+
+aside.pullquote {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  margin-bottom: $space-double;
+  padding: $space-double $space-double 0;
+  font-style: italic;
+  position: relative;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+
+  @include medium {
+    float: right;
+    max-width: 33%;
+    min-width: 300px;
+    margin-left: $space-double;
+    border: none;
+    margin-bottom: 0;
+
+    &--left {
+      float: left;
+      margin-right: $space-double;
+      margin-left: 0;
+    }
+  }
+
+  ::before,
+  ::after {
+    color: rgb(102, 116, 129);
+    display: block;
+    font-size: 4rem;
+    position: absolute;
+    line-height: 1;
+  }
+
+  ::before {
+    content: "\201C";
+    left: 0;
+    top: 0;
+  }
+}

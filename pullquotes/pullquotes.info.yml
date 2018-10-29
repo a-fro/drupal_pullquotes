@@ -1,0 +1,5 @@
+name: CKEditor pullquotes
+type: module
+description: 'A small ckeditor plugin to support pullquotes.'
+package: Administration
+core: 8.x
