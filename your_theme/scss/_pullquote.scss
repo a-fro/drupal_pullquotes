@@ -10,24 +10,24 @@ aside.pullquote {
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.4rem;
-  margin-bottom: $space-double;
-  padding: $space-double $space-double 0;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 0;
   font-style: italic;
   position: relative;
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 
   @include medium {
     float: right;
     max-width: 33%;
     min-width: 300px;
-    margin-left: $space-double;
+    margin-left: 2rem;
     border: none;
     margin-bottom: 0;
 
     &--left {
       float: left;
-      margin-right: $space-double;
+      margin-right: 2rem;
       margin-left: 0;
     }
   }
